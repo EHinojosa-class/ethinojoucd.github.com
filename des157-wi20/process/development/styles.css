@@ -25,3 +25,21 @@ p {
     font-weight: 700;
     line-height: 1.25em;
 }
+
+footer a {
+    padding-right: .25em;
+    margin-right: 1em;
+  }
+  
+  footer a:hover {
+    background-color: #ed6666;
+    color: #FFFFFF;
+  }
+  
+  a {
+    text-decoration: none;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    padding: .5em;
