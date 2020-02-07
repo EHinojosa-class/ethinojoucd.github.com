@@ -11,11 +11,8 @@ main {
     padding: 2em;
 }
 
-h1, p {
-    color: #ffffff;
-}
-
 h1 {
+    color: #ffffff;
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 500;
 }
@@ -24,6 +21,17 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.25em;
+    margin-left: 2em;
+    font-size: 1.25em;
+    background-color: #F9F7F5;
+    padding: 1em;;
+}
+
+footer {
+  padding: 1em;
+  margin-top: 2em;
+  text-align: center;
+  background-color: #F9F7F5;
 }
 
 footer a {
@@ -41,5 +49,13 @@ footer a {
     line-height: 1.5em;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    color: #000000;
     padding: .5em;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
