@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        input {display: block; margin-bottom: 20px;}
-        .invisible { display: none;}
-        .visible {
-            display: block;
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            width: 500px;
-            padding: 20px;
-            color: #fff;
-            background-color: #666;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>PsyKo's Dinner Party</title>
 </head>
 <body>
     
-    <h1>Mad Lib Title</h1>
-    <p>Add interesting graphics. Perhaps a background image for the page. Add nice typography, colors, etc.</p>
+    <h1>PSYKO'S</h1>
+    <h2>MINAGERY OF MANIA</h2>
+    <h3>Welcome to our Dinner Party, beloved Guest!</h3>
     <form id="myform">
-   
-            <input type="text" placeholder="noun" id="noun1">
-            <input type="text" placeholder="noun" id="noun2">
-            <input type="text" placeholder="adjective" id="adjective">
-            <input type="text" placeholder="verb" id="verb">
+            <label> What's your name?
+            <input type="text" placeholder="" id="name"></label>
+            <label>How are you feeling right now?
+            <input type="text" placeholder="" id="feeling"></label>
+            <label>Name a body part.
+            <input type="text" placeholder="" id="bodyPart"></label>
+            <label>What's your favorite food?
+            <input type="text" placeholder="" id="food"></label>
+            <label>What do you hate the most?
+            <input type="text" placeholder="" id="hate"></label>
 
             <input type="submit" value="See Mad Lib!">
 
@@ -68,7 +65,9 @@
         //This function takes an array input, then constructs the madlib, peppering
         //in the user's words where necessary.
         function makeMadLib(theWords){
-            var madlib = `Lorem ipsum dolor ${theWords[0]} sit amet consectetur adipisicing elit. Doloremque ${theWords[1]} iste  ratione cum amet! Vitae ${theWords[2]} earum dolorem nesciunt nam eos sunt, itaque alias, minima ${theWords[3]} explicabo repellendus animi sapiente nobis inventore doloremque? `;
+            var madlib = `Hello ${theWords[0]}, and welcome to the Mad House! I say, you must be feeling ${theWords[1]}. I can tell by the way
+            you move your ${theWords[2]}. But don't sweat it, I have plenty of ${theWords[3]} here for you and our guests. And between
+            you and me, the guests hate ${theWords[4]} as much as you do. Isn't that swell?!`;
 
             //Get the madlib container
             var mlContainer = document.getElementById('madlib');
