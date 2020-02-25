@@ -40,14 +40,6 @@
 
         //change the class on the madlib container so you can see it.
         mlContainer.setAttribute("class", "visible");
-
-         mlContainer.addEventListener('mouseover' , function() {
-            mlContainer.className = "invisible";
-         });
-
-         mlContainer.addEventListener('mouseout' , function(){
-            mlContainer.removeAttribute('class');
-         });
     }
 
 
